@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/number-float64-to-json",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Return a JSON representation of a number.",
   "license": "Apache-2.0",
   "author": {
