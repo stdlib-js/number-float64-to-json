@@ -45,19 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/number-float64-to-json
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import number2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-to-json@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/number-float64-to-json/tags). For example,
-
-```javascript
-import number2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-to-json@v0.1.0-esm/index.mjs';
+var number2json = require( '@stdlib/number-float64-to-json' );
 ```
 
 #### number2json( x )
@@ -96,19 +107,10 @@ var json = number2json( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import number2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-to-json@esm/index.mjs';
+```javascript
+var number2json = require( '@stdlib/number-float64-to-json' );
 
 console.log( number2json( NaN ) );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -140,7 +142,7 @@ console.log( number2json( NaN ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -170,8 +172,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/number-float64-to-json.svg
 [npm-url]: https://npmjs.org/package/@stdlib/number-float64-to-json
 
-[test-image]: https://github.com/stdlib-js/number-float64-to-json/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/number-float64-to-json/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/number-float64-to-json/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/number-float64-to-json/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/number-float64-to-json/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/number-float64-to-json?branch=main
