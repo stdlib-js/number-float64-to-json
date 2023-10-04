@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import number2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-to-json@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/number-float64-to-json/tags). For example,
+
+```javascript
 import number2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-to-json@v0.1.1-deno/mod.js';
 ```
 
@@ -92,7 +97,7 @@ var json = number2json( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import number2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-to-json@v0.1.1-deno/mod.js';
+import number2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-to-json@deno/mod.js';
 
 console.log( number2json( NaN ) );
 ```
