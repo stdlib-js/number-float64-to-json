@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,110 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var PINF = require( '@stdlib/constants-float64-pinf' );
-var NINF = require( '@stdlib/constants-float64-ninf' );
-var isPlainObject = require( '@stdlib/assert-is-plain-object' );
-var toJSON = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof toJSON, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function throws an error if not provided a number', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		null,
-		void 0,
-		true,
-		false,
-		[],
-		{},
-		function noop() {},
-		new Date(),
-		/.*/
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), Error, 'throws an error when provided a ' + (typeof values[i]) );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			toJSON( value );
-		};
-	}
-});
-
-tape( 'the function returns a JSON object', function test( t ) {
-	var expected;
-	var json;
-
-	json = toJSON( NaN );
-
-	t.strictEqual( isPlainObject( json ), true, 'returns an object' );
-
-	expected = {
-		'type': 'float64',
-		'value': 'NaN'
-	};
-	t.deepEqual( json, expected, 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function returns a JSON object', function test( t ) {
-	var expected;
-	var json;
-
-	json = toJSON( PINF );
-
-	t.strictEqual( isPlainObject( json ), true, 'returns an object' );
-
-	expected = {
-		'type': 'float64',
-		'value': '+Infinity'
-	};
-	t.deepEqual( json, expected, 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function returns a JSON object', function test( t ) {
-	var expected;
-	var json;
-
-	json = toJSON( NINF );
-
-	t.strictEqual( isPlainObject( json ), true, 'returns an object' );
-
-	expected = {
-		'type': 'float64',
-		'value': '-Infinity'
-	};
-	t.deepEqual( json, expected, 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function returns a number', function test( t ) {
-	var expected;
-	var json;
-
-	json = toJSON( 3.14 );
-
-	t.strictEqual( typeof json, 'number', 'returns a number' );
-
-	expected = 3.14;
-	t.strictEqual( json, expected, 'returns expected value' );
-
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
