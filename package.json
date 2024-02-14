@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/number-float64-to-json",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Return a JSON representation of a number.",
   "license": "Apache-2.0",
   "author": {
@@ -37,9 +37,9 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/constants-float64-ninf": "^0.1.1",
-    "@stdlib/constants-float64-pinf": "^0.1.1",
-    "@stdlib/string-format": "^0.1.1"
+    "@stdlib/constants-float64-ninf": "^0.2.0",
+    "@stdlib/constants-float64-pinf": "^0.2.0",
+    "@stdlib/string-format": "^0.2.0"
   },
   "devDependencies": {
     "@stdlib/assert-is-plain-object": "^0.1.1",
