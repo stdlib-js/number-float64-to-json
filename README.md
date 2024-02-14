@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import number2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-to-json@esm/index.mjs';
+import number2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-to-json@v0.2.0-esm/index.mjs';
 ```
 
 #### number2json( x )
@@ -97,7 +97,7 @@ var json = number2json( NaN );
 <body>
 <script type="module">
 
-import number2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-to-json@esm/index.mjs';
+import number2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-to-json@v0.2.0-esm/index.mjs';
 
 console.log( number2json( NaN ) );
 
