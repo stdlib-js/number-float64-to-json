@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import number2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-to-json@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/number-float64-to-json/tags). For example,
+
+```javascript
 import number2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-to-json@v0.2.1-esm/index.mjs';
 ```
 
@@ -97,7 +102,7 @@ var json = number2json( NaN );
 <body>
 <script type="module">
 
-import number2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-to-json@v0.2.1-esm/index.mjs';
+import number2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-to-json@esm/index.mjs';
 
 console.log( number2json( NaN ) );
 
